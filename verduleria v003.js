@@ -40,7 +40,7 @@ const Carrito = [];
 // 1- Cargo la pagina principal y el HTML desde JSON
 function traerArchivoBackEnd() {
     //function traerProductos()
-    const API_URL = "http://45.81.5.216";
+    const API_URL = "https://test-backend.xyz";
     const fetchErrorHandle = (response) => response.status === 200
     ? Promise.resolve(response)
     : response.json().then(data => Promise.reject({response, data}));
